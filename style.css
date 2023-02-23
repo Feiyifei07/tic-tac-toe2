@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-image: url(/empty-blackboard.jpg);
+}
+
+header {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+h1 {
+  font-family: "Cabin Sketch", cursive;
+  font-size: 54px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-family: "Cabin Sketch";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 455px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  height: 150px;
+  width: 150px;
+  font-size: 120px;
+  cursor: pointer;
+  font-family: "Cabin Sketch";
+}
+
+.box:nth-child(3n) {
+  border-right: none;
+}
+
+.box:nth-child(6) ~ .box {
+  border-bottom: none;
+}
+
+.reset-btn {
+  display: none;
+  padding: 10px 20px;
+  margin-top: 35px;
+  border-radius: 10px;
+  background-color: rgb(22, 58, 49);
+  color: white;
+  border-color: rgb(22, 58, 49);
+  font-family: "Cabin Sketch", cursive;
+  font-size: 18px;
+  transition: 200ms transform;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.reset-btn:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+}
