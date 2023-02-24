@@ -45,13 +45,14 @@ function checkWinner() {
     let b = winningCombo[1];
     let c = winningCombo[2];
     // if the boxes' positions at A, B and C have the same symbol as currentPlayer, return true; winning answer = currentPlayer choice
-    // 
+    //
     if (
       boxes[a].textContent === currentPlayer &&
       boxes[b].textContent === currentPlayer &&
       boxes[c].textContent === currentPlayer &&
       boxes[a].textContent !== ""
     ) {
+      //change color  only on the winning combo
       boxes[a].classList.add("win-color-change");
       boxes[b].classList.add("win-color-change");
       boxes[c].classList.add("win-color-change");
@@ -109,6 +110,7 @@ resetBtn.addEventListener("click", function () {
   resetBtn.style.display = "none";
   boxes.forEach((box) => {
     box.textContent = "";
+    box.classList.remove("win-color-change");
   });
   infoMessage.textContent = "Click any of the boxes to begin";
   gameOver = false;
