@@ -1,8 +1,10 @@
 //select ALL box elements with class name 'box'
 let boxes = document.querySelectorAll(".box");
-
 let infoMessage = document.querySelector(".message");
 let resetBtn = document.querySelector(".reset-btn");
+let clickBox = new Audio("sound-effects/button-16.wav");
+let clickWin = new Audio("sound-effects/mixkit-achievement-bell-600.wav");
+let clickDraw = new Audio("sound-effects/button-10.wav");
 
 //initialise game variables
 let player1 = "X";
@@ -46,8 +48,12 @@ function checkWinner() {
     if (
       boxes[a].textContent === currentPlayer &&
       boxes[b].textContent === currentPlayer &&
-      boxes[c].textContent === currentPlayer
+      boxes[c].textContent === currentPlayer &&
+      boxes[a].textContent !== ""
     ) {
+      boxes[a].classList.add("win-color-change");
+      boxes[b].classList.add("win-color-change");
+      boxes[c].classList.add("win-color-change");
       return true;
     }
   }
@@ -76,17 +82,19 @@ function handleClick(event) {
     return;
   }
   box.textContent = currentPlayer; //set the box content to the current player X/O
-
+  clickBox.play();
   if (checkWinner()) {
     infoMessage.textContent = `${currentPlayer} wins!`;
     gameOver = true;
     resetBtn.style.display = "block";
+    clickWin.play();
     return;
   }
   if (checkDraw()) {
     infoMessage.textContent = `It's a draw!`;
     gameOver = true;
     resetBtn.style.display = "block";
+    clickDraw.play();
     return;
   }
   switchTurn();
