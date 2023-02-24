@@ -45,6 +45,7 @@ function checkWinner() {
     let b = winningCombo[1];
     let c = winningCombo[2];
     // if the boxes' positions at A, B and C have the same symbol as currentPlayer, return true; winning answer = currentPlayer choice
+    // 
     if (
       boxes[a].textContent === currentPlayer &&
       boxes[b].textContent === currentPlayer &&
