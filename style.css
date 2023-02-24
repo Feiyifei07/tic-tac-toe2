@@ -62,7 +62,8 @@ h2 {
 .box:nth-child(3n) {
   border-right: none;
 }
-
+/* applies no border-bottom to all 'box'es after the 6th child elements with the same class; 
+(~) a CSS selector that is used to select siblings that come after the specified element */
 .box:nth-child(6) ~ .box {
   border-bottom: none;
 }

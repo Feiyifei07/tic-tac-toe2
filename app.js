@@ -24,6 +24,7 @@ function switchTurn() {
   infoMessage.textContent = `It's ${currentPlayer}'s turn`;
 }
 
+//to check if player can win or cannot
 function checkWinner() {
   //answers inside variable in order to win
 
@@ -79,7 +80,7 @@ function handleClick(event) {
     return; // immediately stop the game
   }
   const box = event.target; // box that is clicked
-  //if clicked/box not empty
+  //if clicked/box not empty; fills with current players symbol
   if (box.textContent !== "") {
     return;
   }
@@ -102,10 +103,12 @@ function handleClick(event) {
   switchTurn();
 }
 
+//listens to every click event on every box and runs handleclick function
 boxes.forEach((box) => {
   box.addEventListener("click", handleClick);
 });
 
+// resets the game by going back to its default settings
 resetBtn.addEventListener("click", function () {
   resetBtn.style.display = "none";
   boxes.forEach((box) => {
