@@ -23,3 +23,21 @@
 * Initialised multiple variables for both players, a current player, the restart button, a boolean value to track whether the game is over or not, an an info message that displays the current game state. 
 * Functions: To switch between players, to check for a draw ad for a winner. A loser is already implied automatically after a winner has been determined, so a function is not needed. An a fuction to handle the players' clicks only inside the game area.
 * Added event listeners for the game boxes and the restart button. 
+
+## Personal challenges:
+* Adding a line through styling once the winner has a winning combo; it somehow put a line-through horizontally to every symbol. I still haven't figured it out until now, but I plan to change it in the future.
+* Connecting the winning combo answers to the checkWinner function. Was stuck for hours trying to figure it out. 
+* Changing "X" and "O" into different colors. I still haven't figured it out until now. 
+
+## Areas for improvement:
+* Tackle on the [bonus extensions](https://gist.github.com/epoch/4c95d30f97457b51e68c8a48727c6922#bonus-extensions)
+* Better time management
+* Better variable-naming to create a story
+* Cover all possible website screen dimensions
+
+### Resources:
+#### Sound effects:
+* https://www.soundjay.com/index.html
+* https://mixkit.co/free-sound-effects/win/
+#### Fonts:
+* https://fonts.google.com/
