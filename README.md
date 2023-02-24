@@ -4,7 +4,7 @@
 ## Description
 #### Tic-Tac-Toe is a simple games created with ***HTML***, ***CSS***, and ***Javascript*** technologies. It is a two-player game, played on a 3x3 grid board, where each player places three consecutive symbols, either horizontally, vertically, or diagonally, in order to win the game. 
 
-#### Try it here: TBA
+#### Try it here: [Game](https://feiyifei07.github.io/tic-tac-toe2/)
 
 ## Technologies Used:
 * HTML
