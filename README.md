@@ -17,3 +17,9 @@
 
 ![wireframe](https://user-images.githubusercontent.com/118425964/221032768-443ffbc9-fb98-44fd-bdc0-1a6d8832daaa.png)
 
+## Implementation strategies:
+* Created nine boxes, classified with class names of "box".
+* When the playey clicks on a box, an event listener is triggered, and the box's content is set to the symbols of either "X" or "O", depending on the current player.
+* Initialised multiple variables for both players, a current player, the restart button, a boolean value to track whether the game is over or not, an an info message that displays the current game state. 
+* Functions: To switch between players, to check for a draw ad for a winner. A loser is already implied automatically after a winner has been determined, so a function is not needed. An a fuction to handle the players' clicks only inside the game area.
+* Added event listeners for the game boxes and the restart button. 
