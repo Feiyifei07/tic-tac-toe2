@@ -35,6 +35,14 @@
 * Better variable-naming to create a story
 * Cover all possible website screen dimensions
 
+## To be added in the future:
+* Scoring system between 2 players
+* Button that resets the whole game but stores the scores
+* Options to play with AI or another player
+* More animations (when clicking buttons, title screen before displaying game board)
+* Settings feature: to change background color, customise avatar in the middle of the game, change names, etc)
+* Work on website responsiveness
+
 ### Resources:
 #### Sound effects:
 * https://www.soundjay.com/index.html
